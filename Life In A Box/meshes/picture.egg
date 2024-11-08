@@ -1,0 +1,40 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "obj2egg picture_scaled.obj picture.egg"
+}
+<VertexPool> vpool {
+  <Vertex> 1 {
+    0.216577 0.029868 -0.216577
+    <UV> { 0 0 }
+    <Normal> { 0 1 0 }
+  }
+  <Vertex> 2 {
+    -0.216577 0.029868 -0.216577
+    <UV> { 1 0 }
+    <Normal> { 0 1 0 }
+  }
+  <Vertex> 3 {
+    -0.216577 0.029868 0.216577
+    <UV> { 1 1 }
+    <Normal> { 0 1 0 }
+  }
+  <Vertex> 4 {
+    0.216577 0.029868 0.216577
+    <UV> { 0 1 }
+    <Normal> { 0 1 0 }
+  }
+}
+<Group> root {
+  <Group> default {
+    <Group> g {
+    }
+  }
+  <Group> polySurface1 {
+    <Group> g {
+      <Polygon> {
+        <VertexRef> { 1 2 3 4 <Ref> { vpool } }
+      }
+    }
+  }
+}
